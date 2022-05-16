@@ -99,7 +99,6 @@ public class PeopleController {
         for (FieldError fieldError : errorsToKeep) {
             bindingResult.addError(fieldError);
         }
-        bindingResult.addError(objectError);
         model.addAttribute("org.springframework.validation.BindingResult.person", bindingResult);
     }
 }
